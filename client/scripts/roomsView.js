@@ -4,9 +4,12 @@ var RoomsView = {
   $select: $('#rooms select'),
 
   initialize: function() {
+  	$('#rooms button').click(RoomsView.renderRoom)
   },
 
-  render: function() {
+  renderRoom: function() {
+  	var roomName = $('#message').val();
+  		Rooms.add(roomName)
   }
 
 };
